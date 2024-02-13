@@ -5,30 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
+                
 </head>
 <body>
     <div class="everythingContainer">
         <!-- Header -->
         <div class="header">
             <div class="headerTop">
-                <img src="./photos/magnify.svg">
-                <input type="text" placeholder="Search..">
+                <div class="input">
+                    <img src="./photos/magnify.svg">
+                    <input type="text" placeholder="Search..">
+                </div>
                 <img src="./photos/notifications.svg" alt="Notifications SVG">
-                <img src="./photos/profile.svg" alt="Search SVG"/>
-                <p class="name"> Name </p>
+                <div class="nameProfile">
+                    <img src="./photos/profile.svg" alt="Search SVG"/>
+                    <p class="name"> Barbara Handler </p>
+                </div>
             </div>
             <div class="headerBottom">
-                <img src="./photos/profile.svg" alt="Search SVG"/>
-                <h1> Name </h1>
-                <button><a href=""> New </a></button>
-                <button><a href=""> Upload </a></button>
-                <button><a href=""> Share </a></button>
+                <div class="nameProfile">
+                  <img src="./photos/profile.svg" alt="Search SVG"/>
+                    <div>
+                        <p>hi there,</p>
+                        <h1> Barbara Handler (@barbie) </h1>  
+                    </div>
+                </div>
+                <div>
+                    <button><a href=""> New </a></button>
+                    <button><a href=""> Upload </a></button>
+                    <button><a href=""> Share </a></button>
+                </div>
             </div>
         </div>
         <!-- Dashboard -->
         <div class="dashboard">
-            <img src="./photos/dashboard.svg" alt="Dashboard SVG">
-            <h1> Dashboard </h1>
+            <div class="dashboardTitle">
+                <img src="./photos/dashboard.svg" alt="Dashboard SVG">
+                <h1> Dashboard </h1>
+            </div>
             <ul>
                 <img src="./photos/home.svg" alt="Home SVG">
                 <li><a href="">Home</a></li>
@@ -54,67 +68,132 @@
         <div class="mainContainer">
             <!-- Your Projects -->
             <div class="yourProjects">
-                <div class="cards">
-                    <h1> Idea title </h1>
-                    <p> Content. Lorem ipsum dolor sit amet, facete ceteros omnesque vis te, ex dicit persius has. Nominavi lobortis ei sit, mel no unum expetenda principes. Eruditi eloquentiam at eam, vim exerci putent at. Te ius altera alienum percipit.
-                    </p>
-                    <img src="./photos/favorite.svg" alt="Add to favorites SVG">
-                    <img src="./photos/watch.svg" alt="Add to watch list SVG">
-                    <img src="./photos/share.svg" alt="Share SVG">
-                </div>
-                <div class="cards">
-                    <h1> Idea title </h1>
-                    <p> Content. Lorem ipsum dolor sit amet, facete ceteros omnesque vis te, ex dicit persius has. Nominavi lobortis ei sit, mel no unum expetenda principes. Eruditi eloquentiam at eam, vim exerci putent at. Te ius altera alienum percipit.
-                    </p>
-                    <img src="./photos/favorite.svg" alt="Add to favorites SVG">
-                    <img src="./photos/watch.svg" alt="Add to watch list SVG">
-                    <img src="./photos/share.svg" alt="Share SVG">
-                </div>
-                <div class="cards">
-                    <h1> Idea title </h1>
-                    <p> Content. Lorem ipsum dolor sit amet, facete ceteros omnesque vis te, ex dicit persius has. Nominavi lobortis ei sit, mel no unum expetenda principes. Eruditi eloquentiam at eam, vim exerci putent at. Te ius altera alienum percipit.
-                    </p>
-                    <img src="./photos/favorite.svg" alt="Add to favorites SVG">
-                    <img src="./photos/watch.svg" alt="Add to watch list SVG">
-                    <img src="./photos/share.svg" alt="Share SVG">
-                </div>
-                <div class="cards">
-                    <h1> Idea title </h1>
-                    <p> Content. Lorem ipsum dolor sit amet, facete ceteros omnesque vis te, ex dicit persius has. Nominavi lobortis ei sit, mel no unum expetenda principes. Eruditi eloquentiam at eam, vim exerci putent at. Te ius altera alienum percipit.
-                    </p>
-                    <img src="./photos/favorite.svg" alt="Add to favorites SVG">
-                    <img src="./photos/watch.svg" alt="Add to watch list SVG">
-                    <img src="./photos/share.svg" alt="Share SVG">
-                </div>
-                <div class="cards">
-                    <h1> Idea title </h1>
-                    <p> Content. Lorem ipsum dolor sit amet, facete ceteros omnesque vis te, ex dicit persius has. Nominavi lobortis ei sit, mel no unum expetenda principes. Eruditi eloquentiam at eam, vim exerci putent at. Te ius altera alienum percipit.
-                    </p>
-                    <img src="./photos/favorite.svg" alt="Add to favorites SVG">
-                    <img src="./photos/watch.svg" alt="Add to watch list SVG">
-                    <img src="./photos/share.svg" alt="Share SVG">
-                </div>
-                <div class="cards">
-                    <h1> Idea title </h1>
-                    <p> Content. Lorem ipsum dolor sit amet, facete ceteros omnesque vis te, ex dicit persius has. Nominavi lobortis ei sit, mel no unum expetenda principes. Eruditi eloquentiam at eam, vim exerci putent at. Te ius altera alienum percipit.
-                    </p>
-                    <img src="./photos/favorite.svg" alt="Add to favorites SVG">
-                    <img src="./photos/watch.svg" alt="Add to watch list SVG">
-                    <img src="./photos/share.svg" alt="Share SVG">
+                <h1>Your Projects</h1>
+                <div class="cardContainer">
+                    <div class="cards">
+                        <div>
+                            <h1> Idea title </h1>
+                            <p> Content. Lorem ipsum dolor sit amet, facete ceteros omnesque vis te, ex dicit persius has. </p>
+                        </div>
+                        <div class="cardSvgs">
+                            <img src="./photos/favorite.svg" alt="Add to favorites SVG">
+                            <img src="./photos/watch.svg" alt="Add to watch list SVG">
+                            <img src="./photos/share.svg" alt="Share SVG">
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div>
+                            <h1> Idea title </h1>
+                            <p> Content. Lorem ipsum dolor sit amet, facete ceteros omnesque vis te, ex dicit persius has. </p>
+                        </div>
+                        <div class="cardSvgs">
+                            <img src="./photos/favorite.svg" alt="Add to favorites SVG">
+                            <img src="./photos/watch.svg" alt="Add to watch list SVG">
+                            <img src="./photos/share.svg" alt="Share SVG">
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div>
+                            <h1> Idea title </h1>
+                            <p> Content. Lorem ipsum dolor sit amet, facete ceteros omnesque vis te, ex dicit persius has. </p>
+                        </div>
+                        <div class="cardSvgs">
+                            <img src="./photos/favorite.svg" alt="Add to favorites SVG">
+                            <img src="./photos/watch.svg" alt="Add to watch list SVG">
+                            <img src="./photos/share.svg" alt="Share SVG">
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div>
+                            <h1> Idea title </h1>
+                            <p> Content. Lorem ipsum dolor sit amet, facete ceteros omnesque vis te, ex dicit persius has. </p>
+                        </div>
+                        <div class="cardSvgs">
+                            <img src="./photos/favorite.svg" alt="Add to favorites SVG">
+                            <img src="./photos/watch.svg" alt="Add to watch list SVG">
+                            <img src="./photos/share.svg" alt="Share SVG">
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div>
+                            <h1> Idea title </h1>
+                            <p> Content. Lorem ipsum dolor sit amet, facete ceteros omnesque vis te, ex dicit persius has. </p>
+                        </div>
+                        <div class="cardSvgs">
+                            <img src="./photos/favorite.svg" alt="Add to favorites SVG">
+                            <img src="./photos/watch.svg" alt="Add to watch list SVG">
+                            <img src="./photos/share.svg" alt="Share SVG">
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div>
+                            <h1> Idea title </h1>
+                            <p> Content. Lorem ipsum dolor sit amet, facete ceteros omnesque vis te, ex dicit persius has. </p>
+                        </div>
+                        <div class="cardSvgs">
+                            <img src="./photos/favorite.svg" alt="Add to favorites SVG">
+                            <img src="./photos/watch.svg" alt="Add to watch list SVG">
+                            <img src="./photos/share.svg" alt="Share SVG">
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div>
+                            <h1> Idea title </h1>
+                            <p> Content. Lorem ipsum dolor sit amet, facete ceteros omnesque vis te, ex dicit persius has. </p>
+                        </div>
+                        <div class="cardSvgs">
+                            <img src="./photos/favorite.svg" alt="Add to favorites SVG">
+                            <img src="./photos/watch.svg" alt="Add to watch list SVG">
+                            <img src="./photos/share.svg" alt="Share SVG">
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div>
+                            <h1> Idea title </h1>
+                            <p> Content. Lorem ipsum dolor sit amet, facete ceteros omnesque vis te, ex dicit persius has. </p>
+                        </div>
+                        <div class="cardSvgs">
+                            <img src="./photos/favorite.svg" alt="Add to favorites SVG">
+                            <img src="./photos/watch.svg" alt="Add to watch list SVG">
+                            <img src="./photos/share.svg" alt="Share SVG">
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div>
+                            <h1> Idea title </h1>
+                            <p> Content. Lorem ipsum dolor sit amet, facete ceteros omnesque vis te, ex dicit persius has. </p>
+                        </div>
+                        <div class="cardSvgs">
+                            <img src="./photos/favorite.svg" alt="Add to favorites SVG">
+                            <img src="./photos/watch.svg" alt="Add to watch list SVG">
+                            <img src="./photos/share.svg" alt="Share SVG">
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div>
+                            <h1> Idea title </h1>
+                            <p> Content. Lorem ipsum dolor sit amet, facete ceteros omnesque vis te, ex dicit persius has. </p>
+                        </div>
+                        <div class="cardSvgs">
+                            <img src="./photos/favorite.svg" alt="Add to favorites SVG">
+                            <img src="./photos/watch.svg" alt="Add to watch list SVG">
+                            <img src="./photos/share.svg" alt="Share SVG">
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- Annoucements -->
             <div class="annoucements">
                 <h1>Annoucements</h1>
-                <div class="siteMaintence">
+                <div class="announceCard">
                     <h1> Site Maintence</h1>
                     <p> Content. Lorem ipsum dolor sit amet, facete ceteros omnesque vis te, ex dicit persius has. Nominavi lobortis ei sit, mel no unum expetenda principes... </p>
                 </div>
-                <div class="communityShare">
+                <div class="announceCard">
                     <h1> Community Share</h1>
                     <p> Content. Lorem ipsum dolor sit amet, facete ceteros omnesque vis te, ex dicit persius has. Nominavi lobortis ei sit, mel no unum expetenda principes... </p>
                 </div>
-                <div class="updatePrivacy">
+                <div class="announceCard">
                     <h1> Updated Privacy Policy</h1>
                     <p> Content. Lorem ipsum dolor sit amet, facete ceteros omnesque vis te, ex dicit persius has. Nominavi lobortis ei sit, mel no unum expetenda principes... </p>
                 </div>
@@ -125,22 +204,38 @@
                 <div class="trendingProfiles">
                     <div class="profiles">
                         <img src="./photos/profile.svg" alt="Search SVG"/>
-                        <h1>User Name</h1>
-                        <h2>Chief Executive Officer</h2>
-                    </div>
-                    <div class="profiles"></div>
-                    <img src="./photos/profile.svg" alt="Search SVG"/>
-                        <h1>User Name</h1>
-                        <h2>Chief Executive Officer</h2>
-                    <div class="profiles">
-                        <img src="./photos/profile.svg" alt="Search SVG"/>
-                        <h1>User Name</h1>
-                        <h2>Chief Executive Officer</h2>
+                        <div class="info">
+                            <h1>Username</h1>
+                            <h2>Chief Executive Officer</h2>
+                        </div>
                     </div>
                     <div class="profiles">
                         <img src="./photos/profile.svg" alt="Search SVG"/>
-                        <h1>User Name</h1>
-                        <h2>Chief Executive Officer</h2>
+                        <div class="info">
+                            <h1>Username</h1>
+                            <h2>Chief Financial Officer</h2>
+                        </div>
+                    </div>
+                    <div class="profiles">
+                        <img src="./photos/profile.svg" alt="Search SVG"/>
+                        <div class="info">
+                            <h1>Username</h1>
+                            <h2>Chief Operations Officer</h2>
+                        </div>
+                    </div>
+                    <div class="profiles">
+                        <img src="./photos/profile.svg" alt="Search SVG"/>
+                        <div class="info">
+                            <h1>Username</h1>
+                            <h2>Chief Information Officer</h2>
+                        </div>
+                    </div>
+                    <div class="profiles">
+                        <img src="./photos/profile.svg" alt="Search SVG"/>
+                        <div class="info">
+                            <h1>Username</h1>
+                            <h2>Chief Marketing Officer</h2>
+                        </div>
                     </div>
                 </div>
 
