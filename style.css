@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Noto%20Sans%20SC:700|Noto%20Sans%20SC:400');
 @import url('https://fonts.googleapis.com/css?family=Noto%20Sans%20Elymaic:700|Noto%20Sans%20Elymaic:400');
+
+* {
+    /* --primary: #8810fa;
+    --secondary: #fc79fb;
+    --accent: #fb4ad9; */
+    --primary: #5471c0;
+    --secondary: #8ca3e2;
+    --accent: #5f84e6;
+}
+
 body {
   font-family: 'Noto Sans Elymaic';
   font-weight: 400;
@@ -29,32 +39,20 @@ button {
     height: 35px;
     width: 125px;
     border-radius: 15px;
-    border: solid black;
+    border: solid var(--accent);
     margin: 25px;
     font-size: 20px;
-    background-color: #d9bfd4;
+    background-color: var(--secondary);
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #f0e6ee;
+    background-color: var(--accent);
 }
 
 a:visited {
     color: white;
 }
-
-/* div {
-    border: solid black;
-}
-h1 {
-    border: solid black;
-}
-p {
-    border: solid black;
-} */
-
-
 
 /* Everything Container */
 
@@ -88,14 +86,14 @@ p {
 input,
 input[type=text] {
     height: 34px;
-    background-color: #d9bfd4;
+    background-color: var(--primary);
     border-style: none;
     border-radius: 15px;
     padding: 12px 20px;
     margin-left: 5px;
     color: white;
     font-size: 20px;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 input::placeholder {
@@ -114,7 +112,7 @@ input::placeholder {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: solid black;
+    border: solid var(--accent);
     border-radius: 15px;
 }
 
@@ -123,7 +121,7 @@ input::placeholder {
     width: 75px;
 }
 .header img {
-    filter: invert(83%) sepia(17%) saturate(247%) hue-rotate(260deg) brightness(94%) contrast(90%);
+    filter: invert(66%) sepia(62%) saturate(1084%) hue-rotate(264deg) brightness(101%) contrast(98%);
 }
 
 .nameProfile {
@@ -137,12 +135,12 @@ input::placeholder {
 
 .dashboard {
     grid-area: 1 / 1 / 3 / 1;
-    background-color: #d9bfd4;
+    background-color: var(--primary);
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-right: solid black;
+    border-right: solid var(--accent);
 }
 
 .dashboard h1{
@@ -193,13 +191,14 @@ input::placeholder {
 .yourProjects {
     grid-area: 1/1/3/2;
     border-radius: 15px;
-    background-color: #f0e6ee;
-    border: solid black;
+    background-color: var(--primary);
+    border: solid var(--accent);
 }
 .yourProjectsTitle {
     padding: 10px 10px 10px 15px;
     font-size: 36px;
     height: 45px;
+    color: white;
 }
 .cardContainer {
     display: flex;
@@ -208,7 +207,7 @@ input::placeholder {
     justify-content: center;
 }
 .card img {
-    filter: invert(83%) sepia(17%) saturate(247%) hue-rotate(260deg) brightness(94%) contrast(90%);
+    filter: invert(66%) sepia(62%) saturate(1084%) hue-rotate(264deg) brightness(101%) contrast(98%);
 }
 #cardSvgs {
     display: flex;
@@ -228,9 +227,10 @@ input::placeholder {
     width: 300px;
     border: solid;
     border-width: 3px;
-    border-color: #f3dcef;
+    border-color: var(--accent);
     border-radius: 10px;
-    box-shadow: 10px 10px #d9bfd4;
+    box-shadow: 10px 10px var(--accent);
+    ;
     font-size: 18px;
     background-color: white;
 }
@@ -260,13 +260,14 @@ input::placeholder {
     justify-items: center;
     gap: 10px;
     border-radius: 15px;
-    background-color: #fff3fd;
-    border: solid black;
+    background-color: var(--primary);
+    border: solid var(--accent);
 }
 .announceTitle {
     padding: 10px 10px 10px 10px;
     font-size: 36px;
     height: 45px;
+    color: white;
 }
 
 .announceCard {
@@ -275,9 +276,9 @@ input::placeholder {
     background-color: white;
     border-left-style: solid;
     border-left-width: 3px;
-    border-color: #d9bfd4;
+    border-color: var(--accent);
     border-radius: 10px;
-    box-shadow: 10px 10px #d9bfd4;
+    box-shadow: 10px 10px var(--accent);
     padding: 10px;
 }
 
@@ -297,10 +298,10 @@ input::placeholder {
 
 .trending {
     grid-area: 2/2/2/2;
-    background-color: #fff3fd;
+    background-color: var(--primary);
     border-radius: 15px;
     align-items: center;
-    border: solid black;
+    border: solid var(--accent);
 }
 
 .trending h1 {
@@ -308,6 +309,7 @@ input::placeholder {
     padding-bottom: 5px;
     text-align: center;
     font-size: 36px;
+    color: white;
 }
 
 .trendingProfiles {
@@ -319,6 +321,7 @@ input::placeholder {
 
 .trendingProfiles h1 {
     padding: 0px;
+    color: black;
 }
 
 .profiles {
@@ -328,16 +331,16 @@ input::placeholder {
     background-color: white;
     border-left-style: solid;
     border-left-width: 3px;
-    border-color: #d9bfd4;
+    border-color: var(--accent);
     border-radius: 10px;
-    box-shadow: 10px 10px #d9bfd4;
+    box-shadow: 10px 10px var(--accent);
     margin: 5px;
 }
 
 .profiles img {
     height: 50px;
     width: 50px;
-    filter: invert(83%) sepia(17%) saturate(247%) hue-rotate(260deg) brightness(94%) contrast(90%);
+    filter: invert(66%) sepia(62%) saturate(1084%) hue-rotate(264deg) brightness(101%) contrast(98%);
     padding: 10px;
 }
 
